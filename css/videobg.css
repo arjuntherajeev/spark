@@ -21,10 +21,12 @@ p{
     color: white;
     text-align: center;
 }
+
 #loader {
-	top: 50%;
-    left: 50%;
+	margin-top: 22%;
+    left: 48%;
 }
+
 #myDiv{
     margin-top: 8%;
     margin-left: auto;  
