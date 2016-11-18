@@ -5,7 +5,7 @@ body{
   background-color: black;
 }
 
-h2{
+h3{
     font-family: Roboto, sans-serif;
     font-weight: 300;
     color: white;
@@ -17,7 +17,7 @@ p{
     margin-bottom: 7px;
     font-family: Roboto, sans-serif;
     font-weight: 100;
-    font-size: 30px;
+    font-size: 1.5em;
     color: white;
     text-align: center;
 }
@@ -29,13 +29,16 @@ p{
     text-align: center;
 }
 
-a {
-	width: 175px;
+a{
+	width: 15em;
+    height: 1em;
     margin-right: 5px;
+    margin-bottom: 10px;
     font-family: Roboto, sans-serif;
+    font-size: .8em;
 }
 
 .buttons {
 	display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
 }
