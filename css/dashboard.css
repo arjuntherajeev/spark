@@ -4,8 +4,8 @@
 }
 
 #loader {
-    left:50%;
-    top:50%;
-    margin-left:-50px;
-    margin-top:-50px;
+	display: block;
+    top: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
