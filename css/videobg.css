@@ -33,7 +33,7 @@ a{
 	width: 15em;
     height: 1em;
     margin-right: 5px;
-    margin-bottom: 8%;
+    margin-bottom: 10px;
     font-family: Roboto, sans-serif;
     font-size: .8em;
 }
@@ -41,4 +41,5 @@ a{
 .buttons {
 	display: inline-block;
     margin-top: 30px;
+    margin-bottom: 8%;
 }
