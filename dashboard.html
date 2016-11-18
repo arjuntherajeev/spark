@@ -22,12 +22,24 @@
   <link rel="stylesheet" type="text/css" href="css/dashboard.css">
 </head>
     
-<body> 
+<body onload="myFunction()" style="margin:0;"> 
+  <div id="loader" class="preloader-wrapper active">
+    <div class="spinner-layer spinner-red-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+    
+  <div id="myDiv" class="animate-bottom" style="display:none;">
   <header>
     <div class="navbar-fixed">
     <nav>
     <div class="red darken-4 nav-wrapper">
-
       <a href="index.html" class="brand-logo"><img id="logo" src="src/spark%20vector.png" style="width:200px; height:44px;"></a>
 
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -48,6 +60,19 @@
   <script>$(".button-collapse").sideNav();</script>
   </div>
   </header>
- 
+  </div>
+  
+  <script>
+  var myVar;
+
+  function myFunction() {
+    myVar = setTimeout(showPage, 1000);
+  }
+
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("myDiv").style.display = "block";
+  }
+  </script>
 </body>
 </html>
