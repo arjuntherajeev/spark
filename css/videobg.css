@@ -33,12 +33,12 @@ a{
 	width: 15em;
     height: 1em;
     margin-right: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 8%;
     font-family: Roboto, sans-serif;
     font-size: .8em;
 }
 
 .buttons {
 	display: inline-block;
-    margin-top: 20px;
+    margin-top: 30px;
 }
