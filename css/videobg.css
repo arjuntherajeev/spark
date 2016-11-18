@@ -30,7 +30,7 @@ p{
 }
 
 a{
-	width: 15em;
+    width: 15em;
     height: 1em;
     margin-right: 5px;
     margin-bottom: 10px;
@@ -39,6 +39,7 @@ a{
 }
 
 .buttons {
-	display: inline-block;
+    display: inline-block;
     margin-top: 30px;
+    margin-bottom: 5em;
 }
