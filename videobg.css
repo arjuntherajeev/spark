@@ -1,0 +1,70 @@
+body{
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+h3{
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+}
+
+p{
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-family: Roboto, sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+}
+
+#loader {
+	position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-50px;
+    margin-top:-50px;
+}
+
+
+#myDiv{
+    margin-top: 8%;
+    margin-left: auto;  
+    margin-right: auto;
+    text-align: center;
+}
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+a{
+	width: 15em;
+    height: 1em;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-family: Roboto, sans-serif;
+    font-size: .8em;
+}
+
+.buttons {
+	display: inline-block;
+    margin-top: 30px;
+}
