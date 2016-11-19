@@ -9,7 +9,7 @@
   <!-- Google Material Icons -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!-- Compiled and minified CSS from Materialize-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+<!--   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css"> -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <!-- Materialize javascript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
@@ -18,25 +18,13 @@
   <link rel="stylesheet" type="text/css" href="css/videobg.css">
 </head>
     
-<body data-vide-bg="src/videobg" style="position: absolute" onload="myFunction()"> 
-    
-   <div id="loader" class="preloader-wrapper active">
-    <div class="spinner-layer spinner-red-only">
-      <div class="circle-clipper left">
-        <div class="circle"></div>
-      </div><div class="gap-patch">
-        <div class="circle"></div>
-      </div><div class="circle-clipper right">
-        <div class="circle"></div>
-      </div>
-    </div>
-  </div>
+<body data-vide-bg="src/videobg"> 
     
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="../libs/jquery/dist/jquery.min.js"><\/script>')</script>
-  <script src="Vide/src/jquery.vide.min.js.js"></script>
+  <script src="Vide/src/jquery.vide.js"></script>
     
-   <div id="myDiv" class="animate-bottom" style="display:none;">
+   <div id="myDiv" class="animate-bottom">
   <img src="src/spark%20vector2.png" style="width:300px; height:66px;">
   <h3>Welcome to Spark Resource Management</h3>
     <p>Need help managing your evolving organization?</p>
@@ -46,20 +34,23 @@
     <a href="dashboard.html" class="waves-effect waves-light red darken-4 btn z-depth-3">Get Started</a>
     <a class="waves-effect waves-light black btn z-depth-3">Login</a>    
     </div>
- </div>
+    </div>
     
- <script>
-  var myVar;
-
-  function myFunction() {
-    myVar = setTimeout(showPage, 1000);
-  }
-
-  function showPage() {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("myDiv").style.display = "block";
-  }
-  </script>
   
+<!--  CSS function  -->
+  <script> 
+  function loadStyleSheet(src){
+            if (document.createStyleSheet) document.createStyleSheet(src);
+            else {
+                var stylesheet = document.createElement('link');
+                stylesheet.href = src;
+                stylesheet.rel = 'stylesheet';
+                stylesheet.type = 'text/css';
+                document.getElementsByTagName('head')[0].appendChild(stylesheet);
+            }
+        }
+    
+   loadStyleSheet("https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css");
+  </script>
 </body>
 </html>
