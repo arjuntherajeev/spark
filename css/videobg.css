@@ -4,10 +4,11 @@ body{
   width: 100%;
   background-color: black;
   position: absolute;
+  font-family: Roboto, sans-serif;
 }
 
 h3{
-    font-family: Roboto, sans-serif;
+   
     font-weight: 300;
     color: white;
     text-align: center;
@@ -16,7 +17,7 @@ h3{
 p{
     margin-top: 7px;
     margin-bottom: 7px;
-    font-family: Roboto, sans-serif;
+    /*font-family: Roboto, sans-serif;*/
     font-weight: 100;
     font-size: 1.5em;
     color: white;
@@ -58,7 +59,7 @@ a{
     height: 1em;
     margin-right: 5px;
     margin-bottom: 10px;
-    font-family: Roboto, sans-serif;
+    /*font-family: Roboto, sans-serif;*/
     font-size: .8em;
 }
 
