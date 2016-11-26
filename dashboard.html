@@ -36,7 +36,7 @@
     <ul id="dropdown1" class="dropdown-content">
         <li><a class="red-text text-darken-4" href="#!">Settings</a></li>
         <li class="divider"></li>
-        <li><a class="red-text text-darken-4" href="index.html">Logout</a></li>
+        <li style="display: inline-block"><a class="red-text text-darken-4" href="index.html"><i class="right material-icons">exit_to_app</i>Logout</a></li>
     </ul>
 
     <div class="navbar-fixed">
@@ -44,10 +44,11 @@
       <div class="red darken-4 nav-wrapper">
         <a href="dashboard.html" class="brand-logo"><img id="logo" src="src/sparklogo.png" style="width:7em; height:1.5em;"></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#"><i class="material-icons">message</i></a></li>
-          <li><a href="#"><i class="material-icons">notifications</i></a></li>
+          <li><a href="#">Browse Projects</a></li>
+          <li><a href="#" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Messages"><i class="material-icons">message</i></a></li>
+          <li><a href="#" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Notifications"><i class="material-icons">notifications</i></a></li>
           <!-- Dropdown Trigger -->
-          <li><a class="dropdown-button" data-activates="dropdown1"><i id="usericon" class="material-icons">account_circle<i class="material-icons right">arrow_drop_down</i></i></a></li>
+          <li><a class="dropdown-button" data-gutter="30" data-constrainwidth="false" data-beloworigin="true" data-hover="true" data-activates="dropdown1"><i id="usericon" class="material-icons">account_circle</i></a></li>
         </ul>
       </div>
       </nav>
