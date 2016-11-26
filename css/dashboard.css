@@ -4,8 +4,9 @@ body{
   width: 100%;
   position: absolute;
 }
+
 #logo{
-    margin-top: .3em;
+    margin-top: .25em;
     margin-left: .3em;
 }
 
@@ -13,4 +14,8 @@ body{
   margin: auto;
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
+}
+
+#usericon{
+  margin-top: .95em;
 }
