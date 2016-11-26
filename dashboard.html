@@ -4,28 +4,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#b71c1c" />
-  <title>Dashboard</title>
+  <title>Spark Resource Management</title>
+  <!--Favicon Icon -->
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-  <!-- Google Material Icons -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    
   <!-- Compiled and minified CSS from Materialize-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-    
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    
-  <!-- Materialize javascript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-    
   <!-- Google Fonts - Roboto -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
-  
-  <link rel="stylesheet" type="text/css" href="css/dashboard.css">
-</head>
-    
-<body onload="myFunction()" style="position: absolute"> 
+  <!-- Google Material Icons  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <div id="loader" class="preloader-wrapper active">
+  <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+
+</head>
+<body onload="myFunction()">
+   <div id="loader" class="preloader-wrapper active">
     <div class="spinner-layer spinner-red-only">
       <div class="circle-clipper left">
         <div class="circle"></div>
@@ -36,48 +29,43 @@
       </div>
     </div>
   </div>
-    
-  <div id="myDiv" style="display:none;">
-  <header>
-   
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <div id="PageContents" style="display:none;">
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a class="red-text text-darken-4" href="#!">Settings</a></li>
+        <li class="divider"></li>
+        <li><a class="red-text text-darken-4" href="index.html">Logout</a></li>
+    </ul>
+
     <div class="navbar-fixed">
-    <nav>
-    <div class="red darken-4 nav-wrapper">
-      <a href="index.html" class="brand-logo"><img id="logo" src="src/spark%20vector.png" style="width:200px; height:44px;"></a>
-
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
+      <nav>
+      <div class="red darken-4 nav-wrapper">
+        <a href="dashboard.html" class="brand-logo"><img id="logo" src="src/sparklogo.png" style="width:7em; height:1.5em;"></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#"><i class="material-icons">message</i></a></li>
+          <li><a href="#"><i class="material-icons">notifications</i></a></li>
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><img id="usericon" src="src/user_icon.png" style="width:2.5em; height: 2.5em;"><i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+      </div>
+      </nav>
     </div>
-     <script>$(".button-collapse").sideNav();</script>
-  </nav>
-  
-  </div>
-  </header>
-  </div>
-  
-  <script>
+
+ <script>
   var myVar;
-
   function myFunction() {
-    myVar = setTimeout(showPage, 1000);
+    myVar = setTimeout(showPage, 700);
   }
-
   function showPage() {
     document.getElementById("loader").style.display = "none";
-    document.getElementById("myDiv").style.display = "block";
+    document.getElementById("PageContents").style.display = "block";
   }
   </script>
-    
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+
 </body>
 </html>
