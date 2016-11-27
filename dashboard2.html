@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#b71c1c" />
+  <title>Spark Resource Management</title>
+  <!--Favicon Icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!-- Compiled and minified CSS from Materialize-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <!-- Google Fonts - Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+  <!-- Google Material Icons  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+
+</head>
+<body onload="myFunction()">
+
+   <div id="loader" class="preloader-wrapper active">
+    <div class="spinner-layer spinner-red-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+  <div id="PageContents" style="display:none;">
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a class="black-text" href="#!">Settings</a></li>
+        <li class="divider"></li>
+        <li ><a class="black-text" href="index.html"><i class="right material-icons">exit_to_app</i>Logout</a></li>
+    </ul>
+
+   
+   <script>
+  var myVar;
+  function myFunction() {
+    myVar = setTimeout(showPage, 700);
+  }
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("PageContents").style.display = "block";
+  }
+  </script>
+
+</body>
+</html>
