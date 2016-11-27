@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
 
 </head>
 <body onload="myFunction()">
@@ -41,7 +42,7 @@
         <li ><a class="black-text" href="index.html"><i class="right material-icons">exit_to_app</i>Logout</a></li>
     </ul>
 
-
+      <div class="animated fadeInDown">
       <nav>
       <div class="red darken-4 nav-wrapper">
         <a href="dashboard.html" class="brand-logo"><img id="logo" src="src/sparklogo.png" style="width:7em; height:1.5em;"></a>
@@ -64,13 +65,14 @@
       $( document ).ready($('.button-collapse').sideNav({
             menuWidth: 300, // Default is 240
             edge: 'left', // Choose the horizontal origin
-            closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
             draggable: true // Choose whether you can drag to open on touch screens
           }));
       </script>
       <!-- Dashboard picture -->
+
       <div class="dash-picture">
-        <img src="src/sample.jpg">
+        <img class="responsive-img" src="src/sample.jpg">
         <div class="profile">
           <div class="profile-container">
             <div class="row">
@@ -84,7 +86,7 @@
         </div>
         </div>
       </div>
-
+    </div>
 
   </div>
    <script>
