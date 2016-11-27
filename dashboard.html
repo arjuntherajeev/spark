@@ -18,6 +18,7 @@
 
 </head>
 <body onload="myFunction()">
+
    <div id="loader" class="preloader-wrapper active">
     <div class="spinner-layer spinner-red-only">
       <div class="circle-clipper left">
@@ -35,9 +36,9 @@
 
   <div id="PageContents" style="display:none;">
     <ul id="dropdown1" class="dropdown-content">
-        <li><a class="red-text text-darken-4" href="#!">Settings</a></li>
+        <li><a class="black-text" href="#!">Settings</a></li>
         <li class="divider"></li>
-        <li ><a class="red-text text-darken-4" href="index.html"><i class="right material-icons">exit_to_app</i>Logout</a></li>
+        <li ><a class="black-text" href="index.html"><i class="right material-icons">exit_to_app</i>Logout</a></li>
     </ul>
 
     <div class="navbar-fixed">
@@ -53,11 +54,12 @@
         </ul>
 
         <ul class="side-nav" id="slide-out">
-          <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+          <li><a href="index.html">Browse Projects</li>
         </ul>
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
 
       </div>
+     </div>
       <script>
       $( document ).ready($('.button-collapse').sideNav({
             menuWidth: 300, // Default is 240
@@ -67,8 +69,26 @@
           }));
     	</script>
       </nav>
-    </div>
 
+      <!-- Dashboard picture -->
+      <div class="dash-picture">
+        <img src="src/sample.jpg">
+        <div class="profile">
+          <div class="profile-container">
+            <div class="row">
+            <div class="col l2">
+              <i id="profileicon" class="material-icons">account_circle</i>
+            </div>
+            <div class="col l10">
+                <p>FirstName LastName</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+  </div>
    <script>
   var myVar;
   function myFunction() {
