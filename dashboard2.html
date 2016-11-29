@@ -18,20 +18,8 @@
   <link rel="stylesheet" type="text/css" href="css/dashboard.css">
 
 </head>
-<body onload="myFunction()">
+<body>
     
-   <div id="loader" class="preloader-wrapper active">
-    <div class="spinner-layer spinner-red-only">
-      <div class="circle-clipper left">
-        <div class="circle"></div>
-      </div><div class="gap-patch">
-        <div class="circle"></div>
-      </div><div class="circle-clipper right">
-        <div class="circle"></div>
-      </div>
-    </div>
-  </div>
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
@@ -56,17 +44,6 @@
        $('.parallax').parallax();
      });
   </script>
-
-   <script>
-  var myVar;
-  function myFunction() {
-    myVar = setTimeout(showPage, 700);
-  }
-  function showPage() {
-    document.getElementById("loader").style.display = "none";
-    document.getElementById("PageContents").style.display = "block";
-  }
-  </script>
-
+    
 </body>
 </html>
