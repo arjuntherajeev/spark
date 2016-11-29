@@ -9,6 +9,9 @@ p{
   height: 500px;
   background-color: black;
 }
+.parallax-container{
+  z-index: -1;
+}
 #sidenav-exit{
   margin-top: 20%;
 }
@@ -25,4 +28,5 @@ p{
 
 #usericon{
   font-size: 50px;
+  color: white;
 }
