@@ -58,11 +58,13 @@
           <!-- Dropdown Trigger -->
           <li><a class="dropdown-button" data-gutter="30" data-constrainwidth="false" data-beloworigin="true" data-hover="true" data-activates="dropdown1"><i id="usericon" class="material-icons">account_circle</i></a></li>
          </ul>
+
          <ul class="right">
-             <li><a href="#" id="search-icon" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Search Projects or People"><i class="material-icons">search</i></a></li>
+             <li><a href="#" id="search-icon"><i class="material-icons">search</i></a></li>
          </ul>
+
         <form id="searchbar" class="right">
-          <div class="input-field" style="display:none" id="search-div">
+          <div class="black input-field" style="display:none" id="search-div">
             <input id="search-txt" type="search" placeholder="Search for Projects or People">
             <label for="search-txt" class="black-text"><i class="material-icons left">search</i></label>
             <i class="material-icons" id="close-icon">close</i>
@@ -82,7 +84,8 @@
                 <p>Profile</p>
           </div>
        </div>
-
+      <div class="content">
+      </div>
     </div>
 
   <script>
@@ -94,8 +97,14 @@
       });
       $("#close-icon").click(function(e){
           $("#search-div").slideUp();
-          $("#search-icon").fadeIn()
+          $("#search-icon").fadeIn();
       });
+      $(document).on('click', function (e) {
+      if ($(e.target).closest(".nav-wrapper").length === 0) {
+        $("#search-div").slideUp();
+        $("#search-icon").fadeIn();
+      }
+  });
   });
   </script>
   <script>
@@ -107,7 +116,7 @@
   <script>
   $( document ).ready($('.button-collapse').sideNav({
         menuWidth: 300, // Default is 240
-        edge: 'left', // Choose the horizontal origin
+        edge: 'right', // Choose the horizontal origin
         closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
         draggable: true // Choose whether you can drag to open on touch screens
       }));
