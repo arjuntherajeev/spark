@@ -15,7 +15,11 @@ p{
 .content{
   height:500px;
 }
-
+#search-txt{
+  font-size: 1em;
+  font-weight: 300;
+  font-family: Roboto, sans-serif;
+}
 #searchbar{
   width: 100%;
 }
