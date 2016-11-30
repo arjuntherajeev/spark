@@ -4,26 +4,25 @@ p{
   position: absolute;
   z-index: 2;
 }
-.profile{
-  width: 100%;
-  height: 500px;
+
+.profile-container{
   background-color: black;
+  margin-top: -250px;
+  opacity: 0.8;
+  height: 250px;
+  z-index: 5;
 }
-.parallax-container{
-  z-index: -1;
+
+#searchbar{
+  width: 100%;
 }
 #sidenav-exit{
   margin-top: 20%;
 }
+
 #logo{
     margin-top: .25em;
     margin-left: .3em;
-}
-
-#loader {
-  margin: auto;
-  position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
 }
 
 #usericon{
