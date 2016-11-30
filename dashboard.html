@@ -47,32 +47,57 @@
 
     <div class="animated fadeIn">
       <div class="navbar-fixed">
-      <nav  id="navbar">
+      <nav>
       <div class="red darken-4 nav-wrapper">
+        <a href="#" data-activates="slide-out" class="button-collapse left"><i class="material-icons">menu</i></a>
         <a href="dashboard.html" class="brand-logo"><img id="logo" src="src/sparklogo.png" style="width:7em; height:1.5em;"></a>
-        <ul class="right hide-on-med-and-down">
+          <ul class="right hide-on-med-and-down">
           <li><a href="#" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Browse Projects"><i class="material-icons">find_in_page</i></a></li>
           <li><a href="#" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Messages"><i class="material-icons">message</i></a></li>
           <li><a href="#" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Notifications"><i class="material-icons">notifications</i></a></li>
           <!-- Dropdown Trigger -->
           <li><a class="dropdown-button" data-gutter="30" data-constrainwidth="false" data-beloworigin="true" data-hover="true" data-activates="dropdown1"><i id="usericon" class="material-icons">account_circle</i></a></li>
-        </ul>
-
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+         </ul>
+         <ul class="right">
+             <li><a href="#" id="search-icon" class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Search Projects or People"><i class="material-icons">search</i></a></li>
+         </ul>
+        <form id="searchbar" class="right">
+          <div class="input-field" style="display:none" id="search-div">
+            <input id="search-txt" type="search" placeholder="Search for Projects or People">
+            <label for="search-txt" class="black-text"><i class="material-icons left">search</i></label>
+            <i class="material-icons" id="close-icon">close</i>
+          </div>
+        </form>
 
       </div>
       </nav>
       </div>
-      <!-- parallax background picture -->
-      <div class="parallax-container">
-      <div class="parallax"><img src="src/sample.jpg"></div>
-      </div>
 
-      <div class="profile">
+      <!-- parallax background picture -->
+        <div class="parallax-container">
+          <div class="parallax"><img src="src/sample.jpg"></div>
+        </div>
+        <div class="profile-container">
           <div class="container">
+                <p>Profile</p>
           </div>
-      </div>
-  </div>
+       </div>
+
+    </div>
+
+  <script>
+  $(document).ready(function(e){
+      $("#search-icon").click(function(e){
+        $("#search-icon").hide();
+        $("#search-div").fadeIn();
+        $("#search-txt").focus();
+      });
+      $("#close-icon").click(function(e){
+          $("#search-div").fadeOut();
+          $("#search-icon").fadeIn()
+      });
+  });
+  </script>
   <script>
     $(document).ready(function(){
       $('.parallax').parallax();
@@ -82,7 +107,7 @@
   <script>
   $( document ).ready($('.button-collapse').sideNav({
         menuWidth: 300, // Default is 240
-        edge: 'left', // Choose the horizontal origin
+        edge: 'right', // Choose the horizontal origin
         closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
         draggable: true // Choose whether you can drag to open on touch screens
       }));
