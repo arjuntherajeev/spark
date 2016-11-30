@@ -12,6 +12,9 @@ p{
   height: 250px;
   z-index: 5;
 }
+.content{
+  height:500px;
+}
 
 #searchbar{
   width: 100%;
