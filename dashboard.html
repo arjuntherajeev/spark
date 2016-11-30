@@ -89,11 +89,11 @@
   $(document).ready(function(e){
       $("#search-icon").click(function(e){
         $("#search-icon").hide();
-        $("#search-div").fadeIn();
+        $("#search-div").slideDown();
         $("#search-txt").focus();
       });
       $("#close-icon").click(function(e){
-          $("#search-div").fadeOut();
+          $("#search-div").slideUp();
           $("#search-icon").fadeIn()
       });
   });
@@ -107,7 +107,7 @@
   <script>
   $( document ).ready($('.button-collapse').sideNav({
         menuWidth: 300, // Default is 240
-        edge: 'right', // Choose the horizontal origin
+        edge: 'left', // Choose the horizontal origin
         closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
         draggable: true // Choose whether you can drag to open on touch screens
       }));
