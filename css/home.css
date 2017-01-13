@@ -3,15 +3,14 @@
 }
 
 #logo{
-  width: 23em;
+  width: 20em;
   text-align: center;
   margin-top: 2em;
   padding-bottom: 1em;
 }
 
 .content{
-  width: 100%;
-  padding-left: 400px;
+  padding-left: 350px;
 }
 @media only screen and (max-width : 992px) {
      .content{
