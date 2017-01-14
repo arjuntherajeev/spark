@@ -8,7 +8,10 @@
   margin-top: 2em;
   padding-bottom: 1em;
 }
-
+#logo1{
+    margin-top: .25em;
+    margin-left: .3em;
+}
 .content{
   padding-left: 300px;
 }
