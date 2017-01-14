@@ -26,33 +26,31 @@
 <ul id="slide-out" class="side-nav fixed">
     <li class="center-align"><img id="logo" src="src/sparklogo.png"></li>
 
-    <li class="left-align" ><a href="#" class="waves-effect waves-red white-text active red darken-4"><i class="material-icons white-text">home</i>Home</a></li>
+    <li class="left-align" ><a href="#" class="waves-effect waves-red white-text active red darken-4"><i class="material-icons white-text">dashboard</i>Dashboard</a></li>
     <li><a href="#" class="waves-effect waves-red white-text"><i class="material-icons white-text">find_in_page</i>Browse Projects</a></li>
     <li><a href="#" class="waves-effect waves-red white-text"><i class="material-icons white-text">message</i>Messages</a></li>
     <li><a href="#" class="waves-effect waves-red white-text"><i class="material-icons white-text">notifications</i>Notifications</a></li>
     <li ><a class="waves-effect waves-red white-text" href="index.html"><i class="material-icons white-text">exit_to_app</i>Logout</a></li>
 </ul>
 </header>
+
 <div class="navbar-fixed">
-<nav>
-<div class="red darken-4 nav-wrapper">
+<nav  class="red darken-4  nav-extended">
+<div class="nav-wrapper">
+  <a href="home.html" class="brand-logo"><img id="logo1" src="src/sparklogo.png" style="width:7em;"></a>
   <a href="#" data-activates="slide-out" class="button-collapse left"><i class="material-icons">menu</i></a>
-    <ul class="right hide-on-med-and-down">
 
-    <li><a href="#" class="tooltipped waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Messages"><i class="material-icons">message</i></a></li>
-    <li><a href="#" class="tooltipped waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Notifications"><i class="material-icons">notifications</i></a></li>
-    <!-- Dropdown Trigger -->
-    <li><a class="dropdown-button" data-gutter="30" data-constrainwidth="false" data-beloworigin="true" data-hover="true" data-activates="dropdown1"><i id="usericon" class="material-icons">account_circle</i></a></li>
+  <ul class="right hide-on-med-and-down">
+  <li><a href="#" class="tooltipped waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Browse Projects"><i class="material-icons">find_in_page</i></a></li>
+  <li><a href="#" class="tooltipped waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Messages"><i class="material-icons">message</i></a></li>
+  <li><a href="#" class="tooltipped waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Notifications"><i class="material-icons">notifications</i></a></li>
+
+ </ul>
+  <ul class="tabs tabs-transparent hide-on-large-only">
+     <li class="tab"><a class="active" href="#test1"><i class="material-icons">dashboard</i></a></li>
+     <li class="tab"><a href="#test2"><i class="tiny material-icons">notifications</i></a></li>
+     <li class="tab"><a href="#test3"><i class="material-icons">message</i></a></li>
    </ul>
-
-
-  <form id="searchbar" class="right">
-    <div class="black input-field" style="display:none" id="search-div">
-      <input id="search-txt" type="search" placeholder="Search for Projects or People">
-      <label for="search-txt" class="black-text"><i class="material-icons left">search</i></label>
-      <i class="material-icons" id="close-icon">close</i>
-    </div>
-  </form>
 
 </div>
 </nav>
