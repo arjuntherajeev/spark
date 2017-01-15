@@ -5,13 +5,26 @@
 #logo{
   width: 18em;
   text-align: center;
-  margin-top: 2em;
+  margin-top: 1.5em;
   padding-bottom: 1em;
 }
 #logo1{
-    margin-top: .25em;
+    margin-top: .5em;
     margin-left: .3em;
 }
+#search-txt{
+  font-size: 1em;
+  font-weight: 300;
+  font-family: Roboto, sans-serif;
+}
+#searchbar{
+  width: 100%;
+  height: 64px;
+}
+input[type="search"] {
+  height: 64px !important; /* or height of nav */
+}
+
 .content{
   padding-left: 300px;
 }
@@ -20,3 +33,7 @@
        padding-left: 0;
      }
    }
+header ul li:hover{
+  background-color: #212121;
+  color: black;
+}
