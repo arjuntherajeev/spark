@@ -9,8 +9,11 @@
   padding-bottom: 1em;
 }
 #logo1{
-    margin-top: .5em;
-    margin-left: .3em;
+    margin-top: .3em;
+    margin-left: .1em;
+}
+#mob-tabs{
+  font-weight: 300;
 }
 #search-txt{
   font-size: 1em;
