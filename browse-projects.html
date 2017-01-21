@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000" />
+  <title>Spark Resource Management</title>
+  <!--Favicon Icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!-- Compiled and minified CSS from Materialize-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <!-- Google Fonts - Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+  <!-- Google Material Icons  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--  Animation-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+<div class="row content">
+  <div class="col s12 l8">
+    <ul class="tabs ">
+      <li class="tab col s3"><a href="#test1">Recommended</a></li>
+      <li class="tab col s3"><a class="active" href="#test2">Project Name</a></li>
+      <li class="tab col s3"><a href="#test3">Date</a></li>
+      <li class="tab col s3"><a href="#test4">Location</a></li>
+    </ul>
+  </div>
+  <div id="test1" class="col s12"><h4>Recommended Projects</h4></div>
+  <div id="test2" class="col s12"><h4>Sorted By Project Name</h4></div>
+  <div id="test3" class="col s12"><h4>Sorted By Start Date</h4></div>
+  <div id="test4" class="col s12"><h4>Sorted By Location</h4></div>
+</div>
+
+<div class="row">
+<div class="col s12 content">
+    <div class="card horizontal">
+     <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="src/prj-icon.png" style="height: 200px;">
+      </div>
+       <div class="card-stacked">
+      <div class="card-content">
+      <span class="card-title activator black-text">Project Title<i class="material-icons right">more_vert</i></span>
+      </div>
+      <div class="card-action right-align">
+          <a class = "red darken-4 waves-effect waves-light btn white-text"  href="#">Request to Join</a>
+      </div>
+  </div>
+    <div class="card-reveal">
+    <span class="card-title grey-text text-darken-4">Project Title<i class="material-icons right">close</i></span>
+    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+  </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
