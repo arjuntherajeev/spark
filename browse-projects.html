@@ -15,7 +15,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--  Animation-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+  <link rel="stylesheet" type="text/css" href="css/general.css">
 
 </head>
 <body>
@@ -24,8 +24,18 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
 
-<div class="row content">
-  <div class="col s12 m10 l10">
+    <div class="fixed-action-btn">
+         <a class="btn-floating btn-large red darken-4">
+           <i class="material-icons">sort</i>
+         </a>
+         <ul>
+           <li><a class="btn-floating black tooltipped" data-position="left" data-delay="50" data-tooltip="Ascending"><i class="material-icons">keyboard_arrow_up</i></a></li>
+           <li><a class="btn-floating black tooltipped" data-position="left" data-delay="50" data-tooltip="Descending"><i class="material-icons">keyboard_arrow_down</i></a></li>
+         </ul>
+    </div>
+
+<div class="row">
+  <div class="col s12">
     <ul class="tabs">
       <li class="tab"><a class="active black-text" href="#test1">Recommended</a></li>
       <li class="tab"><a class="black-text" href="#test2">Project Name</a></li>
@@ -33,47 +43,37 @@
       <li class="tab"><a class="black-text" href="#test4">Location</a></li>
     </ul>
   </div>
-  <div class="input-field col s12 m2 l2 right-align">
-    <select>
-        <option value="1" selected>Ascending</option>
-        <option value="2">Descending</option>
-    </select>
-  </div>
 
-  <div id="test1" class="col s12"><h4>Recommended Projects</h4></div>
-  <div id="test2" class="col s12"><h4>Sorted By Project Name</h4></div>
-  <div id="test3" class="col s12"><h4>Sorted By Start Date</h4></div>
-  <div id="test4" class="col s12"><h4>Sorted By Location</h4></div>
+<!-- Content for each tab goes into one of the following
+  <div id="test1" class="col s12"></div> -->
+
 </div>
 
 <div class="row">
-<div class="col s12 content">
-    <div class="card horizontal">
-     <div class="card-image waves-effect waves-block waves-light">
-        <img class="activator" src="src/prj-icon.png">
-      </div>
-       <div class="card-stacked">
-      <div class="card-content">
-      <span class="card-title red-text text-darken-4">Spark</span>
-         <p>ID: DYN1234</br>
-            Type: Resource Management</br>
-            Manager: Arjun Rajeev</br>
-            Location: Dubai</br>
-            Date: 27/01/2017
-         </p>
-      </div>
-      <div class="card-action right-align">
-        <a class = "red darken-4 waves-effect waves-light btn white-text activator"  href="#">See More</a>
-        <a class = "red darken-4 waves-effect waves-light btn white-text"  href="#">Request to Join</a>
-      </div>
-    </div>
-    <div class="card-reveal">
-        <span class="card-title red-text text-darken-4">Project Members<i class="material-icons right">close</i></span></br>
-        <img data-position="bottom" data-delay="50" data-tooltip="Fawaz" class="circle tooltipped" src="src/user-icon.png" style="width:5em; margin-right:1em;">
-    </div>
-    </div>
-  </div>
 
+<div class="col s12 content">
+  <ul class="collapsible popout" data-collapsible="accordion">
+          <li>
+             <div class="collapsible-header">
+               <span class="badge" ><i class="material-icons red-text text-darken-4">star</i></span>
+               <i class="material-icons">assignment</i>
+               Project Name
+             </div>
+             <div class="collapsible-body">
+               <p>ID: DYN1234</br>
+                     Type: Resource Management</br>
+                     Manager: Arjun Rajeev</br>
+                     Location: Dubai</br>
+                     Date: 27/01/2017</br>
+                     Project Members:
+              </p>
+
+              <img data-position="bottom" data-delay="50" data-tooltip="Fawaz" class="circle tooltipped" src="src/user-icon.png" style="width:5em; margin-left:1em; margin-right:1em;margin-bottom:1em;">
+             </div>
+          </li>
+
+   </ul>
+</div>
 </div>
 <script>
   $(document).ready(function() {
