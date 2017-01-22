@@ -32,3 +32,9 @@ p{
 .tabs .indicator {
     background-color: #d32f2f;
 }
+.card-content p{
+  font-size: 1em;
+}
+.card-action a{
+  font-size: 1em;
+}
