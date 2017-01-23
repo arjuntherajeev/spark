@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#b71c1c" />
+  <title>Spark Resource Management</title>
+
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!-- Compiled and minified CSS from Materialize-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <!-- Google Fonts - Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+  <!-- Google Material Icons  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--  Animation-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="css/login.css">
+
+</head>
+<body data-vide-bg="src/nodes" style="position: absolute" onload="myFunction()">
+   <div id="loader" class="preloader-wrapper active">
+    <div class="spinner-layer spinner-red-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <div id="PageContents" class="animate-bottom " style="display:none;">
+      <img src="src/sparklogo.png" style="width:300px; height:66px;">
+    <div class="row">
+
+
+        <div class="col s12 m4 offset-m4">
+          <div id="card-color" class="card-panel white">
+            <div class="row">
+
+                 <form>
+                   <div class="row">
+                     <div class="input-field col s10 offset-s1">
+                       <i class="material-icons prefix">account_circle</i>
+                       <input id="icon_prefix" type="text" class="validate">
+                       <label for="icon_prefix">Username</label>
+                     </div>
+                     <div class="input-field col s10 offset-s1">
+                       <i class="material-icons prefix">lock</i>
+                       <input id="icon_telephone" type="password" class="validate">
+                       <label for="icon_telephone">Password</label>
+                     </div>
+                     <div class="col s6 offset-s1">
+                       <p>
+                          <input type="checkbox" id="test5" />
+                          <label for="test5">Remember Me</label>
+                      </p>
+                     </div>
+                     <div class="col s5">
+                       <p><a class="red-text" href="#"> Forgot Password?</a><p><br>
+                     </div>
+
+                     <div class="center-align">
+                     <a class="red darken-4 waves-effect waves-light btn">button</a>
+                     </div>
+
+                   </div>
+
+                 </form>
+            </div>
+          </div>
+        </div>
+      </div>
+ </div>
+
+ <script>
+  var myVar;
+  function myFunction() {
+    myVar = setTimeout(showPage, 700);
+  }
+  function showPage() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("PageContents").style.display = "block";
+  }
+  </script>
+  <script src="js/Vide/src/jquery.vide.min2.js.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
+
+</body>
+</html>
