@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#b71c1c" />
+  <title>Spark Resource Management</title>
+  <!--Favicon Icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!-- Compiled and minified CSS from Materialize-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <!-- Google Fonts - Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+  <!-- Google Material Icons  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--  Animation-->
+  <link href="{{=URL('static','css/home.css')}}" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script rel="preload" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+</head>
+<body>
+
+<script src="{{=URL('static','js/materialize.min.js')}}"></script>
+ <link rel="stylesheet" type="text/css" href="{{=URL('static','css/general.css')}}">
+
+
+    <div class="fixed-action-btn">
+         <a class="btn-floating btn-large red darken-4">
+           <i class="material-icons">sort</i>
+         </a>
+         <ul>
+           <li><a class="btn-floating black tooltipped" data-position="left" data-delay="50" data-tooltip="Ascending"><i class="material-icons">keyboard_arrow_up</i></a></li>
+           <li onclick="sortMe();"><a class="btn-floating black tooltipped" data-position="left" data-delay="50" data-tooltip="Descending"><i class="material-icons">keyboard_arrow_down</i></a></li>
+         </ul>
+    </div>
+<div style="background-color: #b71c1c;"> <!-- parko-locko -->
+<br> <br>
+<!-- START TABS :) -->
+  <div id="tabSt" class="row z-depth-1" style="background-color: #b71c1c;">
+    <div class="col s12"> 
+      <ul class="tabs tabs-fixed-width" style="overflow-x: hidden;background-color: #b71c1c;">
+        <li class="tab col s3"><a class="active" style="color: white;" href="#byRecommended">RECOMMENDED</a></li>
+        <li class="tab col s3"><a style="color: white;"href="#byName">NAME</a></li>
+        <li class="tab col s3"><a style="color: white;"href="#byDate">DATE</a></li>
+        <li class="tab col s3"><a style="color: white;"href="#">LOCATION</a></li>
+      </ul>
+    </div><br><br><br></div><!--  marco-polo -->
+
+  </div>
+
+</div>
+
+<!-- ORDER BY RECOMMENDED :) -->
+<div class="row" id="byRecommended">
+<!-- start2 -->
+<div class="col s12 l6">
+<div class="card z-depth-1 hoverable">
+  <div class="card-content white center-align">
+    <div class="row">
+      <div class="col s10 m10 l10 card-title red-text text-darken-4 truncate activator" style="line-height: 130%; padding: 0;">Project Falafal</div>
+      <div class="col s2 m2 l2 red-text activator " style="cursor:pointer"><i class="material-icons small right">expand_more</i>
+      </div>
+    </div>
+    <table class="centered"> 
+     <tbody>
+          <tr>
+            <td><i class="material-icons">location_on</i><br>Dubai, United Arab Emirates</td>
+            <td></td>
+            <td><i class="material-icons">date_range</i><br> 
+              29/02/2013 - 03/07/2020</td>
+          </tr>
+      </tbody>
+    </table>
+    <br> <br> 
+      <span class="chip red darken-3 white-text">MySQL
+      </span>
+  </div>
+    <div class="card-reveal">
+    <div class="row ">
+      <div class="col s10 m10 l10 card-title red-text text-darken-4" style="line-height: 120%; padding: 0;">Project Falafal</div>
+      <div class="col s2 m2 l2 red-text card-title" style="cursor:pointer"><i class="material-icons small right">close</i>
+      </div>
+    </div>
+      <span><i class="material-icons left">assignment_turned_in</i>Technology</span> <br> <br>
+      <div class="collection with-header center-align">
+        <a href="#!" id="{{response.write(i)}}" class="collection-item black-text">Nima Tarayaki</a>
+        <a href="#!" id="{{response.write(i)}}" class="collection-item black-text">Nutella Lopez</a>
+        <a href="#!" id="{{response.write(i)}}" class="collection-item black-text">Raja Kulkarni</a>
+
+      </div> <br>
+      <div class="row ">
+      <div class="grid-example col s6 l6 m6"><span><i class="material-icons left">card_travel</i>Onsite</span></div>
+      <div class="grid-example col s6 l6 m6"><span><i class="material-icons left">folder_open</i>Visa Required</span></div>
+    </div>
+    </div>
+  <div class="card-tabs">
+    <ul class="tabs tabs-fixed-width z-depth-2">
+      <li class="tab"><a data-toggle="modal" data-id='Sona Hillsong' href="#modal1">Contact</a></li>
+      <!-- Add Disabled if you'd like to say that a Project is done booking :) -->
+      <li class="tab" id="requestJoin"><a href="#test6">Request to Join</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+<!-- end2 -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+  $('.modal').modal();
+  $('a[data-toggle=modal], button[data-toggle=modal]').click(function () {
+    var data_id = '';
+    if (typeof $(this).data('id') !== 'undefined') {
+      data_id = $(this).data('id');
+    }
+    console.log(data_id);
+    $('#recepient').val(data_id);
+  })
+});
+</script>
+</div>
+<!-- End Order by Recommended -->
+
+
+<script>
+  $(document).ready(function() {
+   $('select').material_select();
+  });
+</script>
+
+l0ve is all
+  <!-- COMPOSE MESSAGE :) :) :D :) :P :) Modal Structure -->
+  <div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+        <form class="col s12" action="">
+        <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">account_circle</i>
+            <input id="recepient" name="recepient" type="text" class="validate autocomplete" disabled autocomplete="off">
+          </div>
+        </div>
+       <div class="row">
+          <div class="input-field col s6">
+            <i class="material-icons prefix">message</i>
+            <textarea id="textarea1" name="message" class="materialize-textarea"></textarea>
+            <label for="textarea1">Message</label>
+            <button type="button" class="btn waves-effect waves-light red valign" onclick="ajax('{{=URL('chat_cont', 'send_message')}}',['recepient','message'],'target3'); getCount('unread');getCount('read');getCount('sent'); Materialize.toast('Sending... :)', 5000)
+">Send Message
+            <i class="material-icons right">send</i>
+            </button>
+
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+
+        <!-- <div id="target3" style="border: thin solid purple;"> </div>
+         -->
+      <!-- Insert Send Button Here :) -->
+    </div>
+  </div>
+
+
+</body>
+</html>
