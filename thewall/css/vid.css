@@ -1,0 +1,82 @@
+video#bgvid { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 130%;
+    min-height: 130%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover; 
+
+}
+
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+
+}
+
+.enter { 
+    padding: 15px 15px;
+    font-size: 33px;
+background-color: rgba(255,0,0,0.3);
+border: thin solid black;
+}
+
+.enter:hover { 
+cursor: pointer;
+
+}
+
+
+#simple_sketch { 
+
+border: thin solid black; 
+}
+
+#main { 
+
+background-color: rgba(0,0,0,0.37);
+border: 0.3px solid black;
+
+}
+
+.fa { 
+background: black;
+
+}
+
+#home:hover { 
+cursor: pointer;
+box-shadow: 0px 0px 15px #fff;
+}
+
+
+/* The changes/ colors added to the side - Scroll Bar */
+::-webkit-scrollbar {
+    width: 13px;
+}
+ 
+::-webkit-scrollbar-track {
+    /* -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,1.00); */
+    border-radius: 10px;
+    background-color: white; /*rgb(255,76,76);*/
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: rgba(0,0,0,1.0);
+    /*background-image: url("block.png");*/
+    /*-webkit-box-shadow: inset 0 0 6px rgba(255,255,255,1.00);*/
+}
+
+body { 
+
+font-family: 'Open Sans Condensed', sans-serif;
+}
