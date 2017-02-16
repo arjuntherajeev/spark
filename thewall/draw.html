@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- Let's Begin, shall we? :) -->
+
+<html lang="en">
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> <!-- Using 'Roboto' font from Google -->
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'> <!-- Using 'Lato' font from Google -->
+	<!-- Placed first so that the font is loaded ASAP -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <link rel="icon" href="images/thewall.jpg">		<!-- Website icon/logo -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+
+ 
+
+    <title>Draw</title>
+
+    <!-- The CSS Stylesheets will be linked here -->
+        <link href="css/Skeleton/normalize.css" rel="stylesheet">       <!-- Skeleton CSS -->
+      <link href="css/Skeleton/skeleton.css" rel="stylesheet">        <!-- Skeleton CSS -->
+    <link href="css/vid.css" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="http://intridea.github.io/sketch.js/lib/sketch.js"></script>
+</head>
+
+<body>
+
+    <video autoplay loop id="bgvid" muted> 
+        <source src="images/draw.mp4" type="video/mp4">
+    </video>
+<header>
+</header>
+
+
+<canvas id="simple_sketch" style=" background: rgba(255,255,255,0.73); border: thick solid black;"class="centered" width="500" height="500"></canvas>
+
+
+<script type="text/javascript">
+  $(function() {
+    $('#simple_sketch').sketch();
+  });
+</script>
+
+
+<script type="text/javascript">
+var canvas = document.getElementById('simple_sketch');
+      var context = canvas.getContext('2d');
+
+     // bind event handler to clear button
+      document.getElementById('clear').addEventListener('click', function() {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+      }, false);
+
+    </script>
+        <h1 class="centered back" style=" color: white; background: rgba(0,0,0,0.75);border: thick solid black; top: 50px" onclick="go()"> GO BACK </h1> &nbsp;
+
+         <h1 class="centered back" style=" color: white; background: rgba(0,0,0,0.75);border: thick solid black; top: 550px" onclick="re()"> REFRESH</h1> &nbsp;
+
+        <style type="text/css">
+        .back:hover { 
+          cursor: pointer;
+
+
+        }
+        </style>
+        <script type="text/javascript">
+        function go()
+        { 
+          window.location="index.html";
+        }
+        function re() 
+        {
+          alert("You can draw again!");
+          window.location="draw.html";
+        }
+        </script>
+</div>
+</body>
