@@ -3,12 +3,12 @@
 <head lang="en">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#b71c1c" />
+  <meta name="theme-color" content="#000000" />
   <title>Spark Resource Management</title>
   <!--Favicon Icon -->
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <!-- Compiled and minified CSS from Materialize-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
   <!-- Google Fonts - Roboto -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
   <!-- Google Material Icons  -->
@@ -21,10 +21,11 @@
 <body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 <header>
 <ul id="slide-out" class="side-nav fixed">
     <div class="center-align"><img id="logo" class="center-align" src="src/sparklogo.png"></div>
+
     <li><a href="#" class="waves-effect waves-red white-text active red darken-4"><i class="material-icons white-text">dashboard</i>Dashboard</a></li>
     <li><a href="#" class="waves-effect waves-red white-text"><i class="material-icons white-text">find_in_page</i>Browse Projects</a></li>
     <li><a href="#" class="waves-effect waves-red white-text"><i class="material-icons white-text">message</i>Messages</a></li>
@@ -48,33 +49,83 @@
   </ul>
   <div id="navbar">
   <ul class="right hide-on-large-only">
-      <li><a href="#" id="search-icon" class="waves-effect waves-light"><i class="material-icons">search</i></a></li>
-      <li><a href="#" data-activates="slide-out" class="button-collapse" style="margin:0;"><i class="material-icons">menu</i></a></li>
-      <li><a class="dropdown-button" data-gutter="5" data-constrainwidth="false" data-beloworigin="false" data-hover="false" data-activates="dropdown1"><i id="usericon" class="material-icons">more_vert</i></a></li>
+      <li><a href="#" id="search-icon" class="waves-effect waves-red"><i class="material-icons">search</i></a></li>
+      <li><a href="#" data-activates="slide-out" class="button-collapse waves-effect waves-red" style="margin:0;"><i class="material-icons">menu</i></a></li>
+      <li><a class="dropdown-button waves-effect waves-red" data-gutter="5" data-constrainwidth="false" data-beloworigin="false" data-hover="false" data-activates="dropdown1"><i id="usericon" class="material-icons">more_vert</i></a></li>
   </ul>
 
   <a class="brand-logo left hide-on-large-only"><img id="logo1" src="src/sparklogo.png" style="width:6em;"></a>
 
+  <ul id='notifications' class='collection dropdown-content'>
+      <h6 class="red-text text-darken-4  center-align" style="font-size:1.5em;">Notifications</h6>
+      <li><a href="#"  class="collection-item avatar">
+      <img src="src/user-icon.png" alt="" class="circle">
+      <span>Name </span>
+      <p>First Line <br>
+         Second Line
+      </p>
+      </a>
+      </li>
+
+  </ul>
+  <ul id='messages' class='collection dropdown-content'>
+      <h6 class="red-text text-darken-4  center-align" style="font-size:1.5em;">Messages</h6>
+
+      <li><a href="#"  class="collection-item avatar">
+        <div class="row valign-wrapper" style="margin-top:12px;">
+              <div class="col l10 valign" > <img src="src/user-icon.png"  style="width:3em;height:3em;margin-top: 2px;" alt="" class="circle">
+                <h6 class="red-text text-darken-4" style="font-weight:600;">Name </h6>
+                <h6 class="black-text truncate" style="font-size:.85em;">This is an extremely long message with over 200 words that will be truncated
+                </h6></div>
+              <div class="col l2"><h6 class="grey-text" style="font-size:.85em;">Yesterday</h6></div>
+            </div>
+      </a>
+      </li>
+      <li><a href="#"  class="collection-item avatar">
+        <div class="row valign-wrapper" style="margin-top:12px;">
+              <div class="col l10 valign" > <img src="src/user-icon.png"  style="width:3em;height:3em;margin-top: 2px;" alt="" class="circle">
+                <h6 class="red-text text-darken-4" style="font-weight:600;">Name </h6>
+                <h6 class="black-text truncate" style="font-size:.85em;">This is an extremely long message with over 200 words that will be truncated
+                </h6></div>
+              <div class="col l2"><h6 class="grey-text" style="font-size:.85em;">Yesterday</h6></div>
+            </div>
+      </a>
+      </li>
+      <li><a href="#"  class="collection-item avatar">
+        <div class="row valign-wrapper" style="margin-top:12px;">
+              <div class="col l10 valign" > <img src="src/user-icon.png"  style="width:3em;height:3em;margin-top: 2px;" alt="" class="circle">
+                <h6 class="red-text text-darken-4" style="font-weight:600;">Name </h6>
+                <h6 class="black-text truncate" style="font-size:.85em;">This is an extremely long message with over 200 words that will be truncated
+                </h6></div>
+              <div class="col l2"><h6 class="grey-text" style="font-size:.85em;">Yesterday</h6></div>
+            </div>
+      </a>
+      </li>
+      <li ><a class="center-align">View all</a></li>
+  </ul>
   <ul class="right hide-on-med-and-down">
-  <li><a href="#" class="tooltipped waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Browse Projects"><i class="material-icons">find_in_page</i></a></li>
-  <li><a href="#" class="tooltipped waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Messages"><i class="material-icons">message</i></a></li>
-  <li><a href="#" class="tooltipped waves-effect waves-light" data-position="bottom" data-delay="50" data-tooltip="Notifications"><i class="material-icons">notifications</i></a></li>
- </ul>
+    <li><a href="#" class="waves-effect waves-light dropdown-button" href='#' data-activates='notifications' alignment='right'><i class="material-icons">notifications</i></a></li>
+    <li><a href="#" class=" waves-effect waves-light dropdown-button" href='#' data-activates='messages' alignment='right'><i class="material-icons">message</i></a></li>
+    <li><a href="#" class=" waves-effect waves-light"><i class="material-icons">account_circle</i></a></li>
+
+   </ul>
+
 
   <ul class="tabs tabs-transparent hide-on-large-only" id="mob-tabs">
-    <li class="tab"><a class="active waves-effect waves-light" href="#"><i class="material-icons">dashboard</i></a></li>
-    <li class="tab"><a class="waves-effect waves-light" href="#"><i class="material-icons">notifications</i></a></li>
-    <li class="tab"><a class="waves-effect waves-light" href="#"><i class="material-icons">message</i></a></li>
-    <li class="tab"><a class="waves-effect waves-light" href="#"><i class="material-icons">account_circle</i></a></li>
+    <li class="tab"><a class="active waves-effect waves-red" href="#test-swipe-1"><i class="material-icons">dashboard</i></a></li>
+    <li class="tab"><a class="waves-effect waves-red" href="#test-swipe-2"><i class="material-icons">notifications</i></a></li>
+    <li class="tab"><a class="waves-effect waves-red" href="#test-swipe-3"><i class="material-icons">message</i></a></li>
+    <li class="tab"><a class="waves-effect waves-red" href="#test-swipe-4"><i class="material-icons">account_circle</i></a></li>
    </ul>
+
  </div>
 
 </div>
 </nav>
+
 </div>
 
 <div class="content">
-
 
 </div>
 
@@ -108,6 +159,19 @@ $(document).ready(function(e){
      }));
  </script>
 
+<script>
+$('.dropdown-button').dropdown({
+     inDuration:200,
+     outDuration: 200,
+     constrainWidth: false, // Does not change width of dropdown to that of the activator
+     hover: false, // Activate on hover
+     gutter: 0, // Spacing from edge
+     belowOrigin: true, // Displays dropdown below the button
+     alignment: 'left', // Displays dropdown with edge aligned to the left of button
+     stopPropagation: false // Stops event propagation
+   }
+ );
+</script>
 
 </body>
 </html>
