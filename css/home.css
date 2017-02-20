@@ -24,19 +24,51 @@
   width: 100%;
   height: 64px;
 }
+.nav-wrapper{
+  height: 600px;
+}
 input[type="search"] {
   height: 64px !important; /* or height of nav */
 }
 
 .content{
   padding-left: 300px;
+  margin-top: 65px;
+  background-color: black;
 }
 @media only screen and (max-width : 992px) {
      .content{
        padding-left: 0;
+       margin-top: 48px;
+     }
+     .dropdown-content{
+       border-radius: 3px;
      }
    }
 header ul li:hover{
   background-color: #212121;
   color: black;
+}
+
+@media ( min-width: 992px){
+.dropdown-content{
+  margin: 20px 0px 0px 0px;
+  overflow:inherit !important;
+  min-width: 500px;
+  margin-top: 65px;
+  border-radius: 3px;
+}
+
+
+.dropdown-content:before{
+    content: '';
+    width: 0;
+    height: 0;
+    right: 16.5px;
+    margin-top: -9.5px;
+    position: absolute;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+}
 }
