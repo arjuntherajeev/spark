@@ -16,7 +16,7 @@
   <!--  Animation-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="css/home.css">
-
+  <link rel="stylesheet" type="text/css" href="css/unread.css">
 </head>
 <body>
 
@@ -68,46 +68,73 @@
       </li>
 
   </ul>
-  <ul id='messages' class='collection dropdown-content'>
+  <ul id='messages' class='collection dropdown-content z-depth-5'>
       <h6 class="red-text text-darken-4  center-align" style="font-size:1.5em;">Messages</h6>
 
-      <li><a href="#"  class="collection-item avatar">
+      <li style="border-bottom:.5px solid #eeeeee"><a href="#"  class="collection-item avatar">
         <div class="row valign-wrapper" style="margin-top:12px;">
               <div class="col l10 valign" > <img src="src/user-icon.png"  style="width:3em;height:3em;margin-top: 2px;" alt="" class="circle">
                 <h6 class="red-text text-darken-4" style="font-weight:600;">Name </h6>
                 <h6 class="black-text truncate" style="font-size:.85em;">This is an extremely long message with over 200 words that will be truncated
                 </h6></div>
-              <div class="col l2"><h6 class="grey-text" style="font-size:.85em;">Yesterday</h6></div>
+              <div class="col l2"><h6 class="grey-text  right-align" style="font-size:.85em;">1d ago</h6></div>
             </div>
       </a>
       </li>
-      <li><a href="#"  class="collection-item avatar">
-        <div class="row valign-wrapper" style="margin-top:12px;">
-              <div class="col l10 valign" > <img src="src/user-icon.png"  style="width:3em;height:3em;margin-top: 2px;" alt="" class="circle">
-                <h6 class="red-text text-darken-4" style="font-weight:600;">Name </h6>
-                <h6 class="black-text truncate" style="font-size:.85em;">This is an extremely long message with over 200 words that will be truncated
-                </h6></div>
-              <div class="col l2"><h6 class="grey-text" style="font-size:.85em;">Yesterday</h6></div>
-            </div>
-      </a>
-      </li>
-      <li><a href="#"  class="collection-item avatar">
-        <div class="row valign-wrapper" style="margin-top:12px;">
-              <div class="col l10 valign" > <img src="src/user-icon.png"  style="width:3em;height:3em;margin-top: 2px;" alt="" class="circle">
-                <h6 class="red-text text-darken-4" style="font-weight:600;">Name </h6>
-                <h6 class="black-text truncate" style="font-size:.85em;">This is an extremely long message with over 200 words that will be truncated
-                </h6></div>
-              <div class="col l2"><h6 class="grey-text" style="font-size:.85em;">Yesterday</h6></div>
-            </div>
-      </a>
-      </li>
-      <li ><a class="center-align">View all</a></li>
-  </ul>
-  <ul class="right hide-on-med-and-down">
-    <li><a href="#" class="waves-effect waves-light dropdown-button" href='#' data-activates='notifications' alignment='right'><i class="material-icons">notifications</i></a></li>
-    <li><a href="#" class=" waves-effect waves-light dropdown-button" href='#' data-activates='messages' alignment='right'><i class="material-icons">message</i></a></li>
-    <li><a href="#" class=" waves-effect waves-light"><i class="material-icons">account_circle</i></a></li>
 
+      <li><a href="#"  class="collection-item avatar">
+        <div class="row valign-wrapper" style="margin-top:12px;">
+              <div class="col l10 valign" > <img src="src/user-icon.png"  style="width:3em;height:3em;margin-top: 2px;" class="circle">
+                <h6 class="red-text text-darken-4" style="font-weight:600;">Name </h6>
+                <h6 class="black-text truncate" style="font-size:.85em;">This is an extremely long message with over 200 words that will be truncated
+                </h6></div>
+              <div class="col l2"><h6 class="grey-text" style="font-size:.85em;">Yesterday</h6></div>
+            </div>
+      </a>
+      </li>
+      <li><a href="#"  class="collection-item avatar">
+
+        <div class="row valign-wrapper" style="margin-top:12px;">
+              <div class="col l10 valign" > <img src="src/user-icon.png"  style="width:3em;height:3em;margin-top: 2px;" alt="" class="circle">
+                <h6 class="red-text text-darken-4" style="font-weight:600;">Name </h6>
+                <h6 class="black-text truncate" style="font-size:.85em;">This is an extremely long message with over 200 words that will be truncated
+                </h6></div>
+              <div class="col l2"><h6 class="grey-text" style="font-size:.85em;">23d ago</h6></div>
+            </div>
+      </a>
+      </li>
+      <li><a class="center-align red-text text-darken-4">View all</a></li>
+  </ul>
+
+  <ul id='logout_dropdown' class='collection dropdown-content z-depth-5' style="min-width:400px">
+
+    <div class="row valign-wrapper hide-on-med-and-down" style="margin-top:1.5em;margin-bottom:-.4em;">
+      <div class="container">
+        <img class="circle" src="src/user-icon.png" style="width:8em;margin-left:1em;">
+        <a href="#"><div class="circle overlay">
+          <div class="text center" style="margin-top:-0.2em;"><i class="material-icons" style="font-size:1.5em;">add_a_photo</i><h6 style="margin-top:-1em;">Change Picture</h6></div>
+        </div></a>
+      </div>
+
+        <div class="col l7  m7 black-text" style="margin-top:-6em;">
+            <h6 style="font-size:1.5em;">Muhammed Fawaz</h6>
+            <h6 class="red-text text-darken-4" style="font-weight:400;font-size:1em;">Employee</h6>
+        </div>
+    </div>
+  </ul>
+
+  <div style="padding-left:330px;">
+  <form class=" hide-on-med-and-down">
+   <div class="input-field left red darken-3" style="width:84%; height:40px; border-radius:5px;margin-top:12px;">
+     <input id= "search" type="search" style="max-height:40px; border-radius:5px;font-size:.9em;" placeholder="Search for People or Projects" required>
+     <label class="label-icon" for="search" style="margin-top:-11px;"><i class="material-icons">search</i></label>
+   </div>
+ </form>
+ </div>
+  <ul class="right hide-on-med-and-down valign-wrapper">
+    <li><a href="#" class="waves-effect waves-light dropdown-button badge1" href='#' data-badge="2" data-activates='notifications' alignment='right'><i class="material-icons">notifications </i></a></li>
+    <li><a href="#" class=" waves-effect waves-light dropdown-button badge1" href='#' data-badge="1"  data-activates='messages' alignment='right'><i class="material-icons" >mail</i></a></li>
+    <li><a href="#" class=" waves-effect waves-light dropdown-button center" href='#' data-activates='logout_dropdown' data-gutter="4" alignment='right'><img src="src/user-icon.png"  style="width:2em;position:inherit;margin-bottom:1.25em;margin-top:1em;margin-left:0.1em;" class="circle valign"></a></li>
    </ul>
 
 
