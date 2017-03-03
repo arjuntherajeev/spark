@@ -1,14 +1,25 @@
 
 <!-- Hey :D  -->
-{{
-	#pName = name
-}}
-
 <!DOCTYPE html>
 <html>
 <body>
 <link rel="stylesheet" type="text/css" href="css/dashboard.css">
-<script src="js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#000000" />
+  <title>Spark Resource Management</title>
+  <!--Favicon Icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <!-- Compiled and minified CSS from Materialize-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <!-- Google Fonts - Roboto -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
+  <!-- Google Material Icons  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--  Animation-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 
 <div class="parallax-container">
   <div class="parallax"><img src="src/nice2.jpg"></div>
@@ -39,9 +50,7 @@
 
 
 <!-- Project Members -->
-{{
-	#q18 = gdb.query(q="MATCH (p:Project)-[r:ISA]-(f:Project_Type) RETURN (p.Name),(f.Name),(p.Start_Date),(p.End_Date),(p.Location) ORDER BY p.Start_Date")  #:)
-}}
+
  <ul class="collection">
     <li class="collection-item avatar">
       <img id="profile_pic" src="{{=URL('static','src/nice2.jpg')}}" style="width:3.31em; height:3.31em;" alt="" class="circle responsive-image left">
