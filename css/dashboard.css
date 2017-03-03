@@ -2,39 +2,15 @@
   margin-top: -250px;
   height: 250px;
   z-index: 5;
-  background-image: linear-gradient(to bottom, transparent 0%, black 100%);
-}
-p{
-  color: white;
-  font-size: 1em;
-  position: absolute;
-  z-index: 2;
+  background-image: linear-gradient(to bottom, transparent 40%, black 90%);
 }
 .parallax-container{
     height: 250px;
 }
 .profile{
-  height: 150px;
+  height: 120px;
 
-  margin-top: -150px;
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-}
-
-.current_projects {
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-}
-.content{
-  margin-left: 2.5%;
-  margin-right: 2.5%;
-}
-.tabs .indicator {
-    background-color: #d32f2f;
-}
-.card-content p{
-  font-size: 1em;
-}
-.card-action a{
-  font-size: 1em;
+  margin-top: -120px;
+  margin-left: 2%;
+  margin-right: 2%;
 }
