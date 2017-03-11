@@ -1,0 +1,9 @@
+.parallax-container{
+    height: 250px;
+}
+.gradient-overlay{
+  margin-top: -250px;
+  height: 250px;
+  z-index: 5;
+  background-image: linear-gradient(to bottom, transparent 0%, black 100%);
+}
