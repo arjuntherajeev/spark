@@ -1,5 +1,9 @@
+
 #slide-out{
   background-color: black;
+}
+body{
+  overflow: hidden;
 }
 
 #logo{
