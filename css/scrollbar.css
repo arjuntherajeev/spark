@@ -1,7 +1,5 @@
 @media ( min-width: 992px){
-  body{
-    overflow: hidden;
-  }
+
   .scroll{
     overflow-y:auto;
      height:100%;
