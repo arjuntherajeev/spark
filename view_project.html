@@ -1,84 +1,122 @@
-
-<!-- Hey :D  -->
 <!DOCTYPE html>
 <html>
-<body>
-<link rel="stylesheet" type="text/css" href="css/dashboard.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
- <meta charset="UTF-8">
+<head lang="en">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#000000" />
   <title>Spark Resource Management</title>
   <!--Favicon Icon -->
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <!-- Compiled and minified CSS from Materialize-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
   <!-- Google Fonts - Roboto -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500" rel="stylesheet">
   <!-- Google Material Icons  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--  Animation-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="css/general.css">
+  <link rel="stylesheet" type="text/css" href="css/scrollbar.css">
 
 
-<div class="parallax-container">
-  <div class="parallax"><img src="src/nice2.jpg"></div>
-</div>
-<div class="gradient-overlay"></div>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
 
-<div class= "profile">
-  <div class="row ">
-  <div class="col s12 l1">
-  </div>
-  <div class="col s12 l12 center-align">
-  <h4 class="white-text">Project L0ve</h4>
-  </div>
-  </div>
-</div>
-<br> 
-<!-- Start_Date & End_Date -->
-<div class="row center-align">
-      <div class="col s6 l6 m6">
-      	<i class="material-icons">date_range</i> 25/10/2017
+     <div class="header-wrapper valign-wrapper black darken-4" style="width:100%;min-height:4em;">
+      <a href="browse-projects.html" style="margin-left:1em;margin-top:.4em;" class="modal-action modal-close"><i class="material-icons white-text">arrow_back</i></a>
+     <h5 class="white-text" style="font-size:1.5em;margin-left:.7em;margin-top:.4em;">Quality-Focused Coherent Budgetary Management</h5>
+    </div>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="src/prj1.jpg"></div>
+    </div>
+
+
+    <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s6"><a class="active black-text"  href="#info">Information</a></li>
+        <li class="tab col s6"><a class="black-text" href="#team">Members</a></li>
+      </ul>
+    </div>
+    </div>
+    <div style="padding-left:2em;padding-right:2em;">
+      <div id="info" class="col s12">
+      <h5 class="red-text text-darken-4">Description</h5>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <div class="row ">
+      <div class="col s6 l3 center-align" style="margin-top:1.5em;"><span><i class="material-icons">assignment_turned_in</i><br>Technology</span></div>
+      <div class="col s6 l3 center-align" style="margin-top:1.5em;"><span><i class="material-icons">location_on</i><br>Dubai, United Arab Emirates</span></div>
+      <div class="col s6 l3 center-align" style="margin-top:1.5em;"><span><i class="material-icons">card_travel</i><br>Onsite</span></div>
+      <div class="col s6 l3 center-align" style="margin-top:1.5em;"><span><i class="material-icons">folder_open</i><br>Visa Required</span></div>
       </div>
-      <div class="col s6 m6 l6">
-      	<i class="material-icons">date_range</i> 11/02/1201
+      <br>
+
+      <p><span class="left">Start Date</span><span class="right">End Date<span></p><br>
+      <div id="myProgress" style="margin-bottom:10em;">
+        <div id="myBar"><br></div>
       </div>
-</div>
 
-<!-- Project Information -->
+      </div>
+    </div>
+    <div id="team" class="col s12">
+      <div class="row valign">
+        <div class="col s12 m6 l4">
+          <div class="card-panel hoverable white center">
+              <div style="height:270px;">
+              <img src="src/user-icon.png" style=" border-radius: 50%;margin-top:1em;" class="circle" height="125" width="125">
+              <h5 class="red-text text-darken-4">Arjun Rajeev Nedungadi</h5>
+              <p style="font-weight:300;margin-top:-.5em;">Manager</p>
+            </div>
+              <a class="waves-effect waves-light red darken-4 btn" href="#">Message</a>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card-panel hoverable white center">
+              <div style="height:270px;">
+              <img src="src/user-icon.png" style=" border-radius: 50%;;margin-top:1em;" class="circle" height="125" width="125">
+              <h5 class="red-text text-darken-4">Ashwin</h5>
+              <p style="font-weight:300;margin-top:-.5em;">Employee</p>
+              </div>
 
+              <a class="waves-effect waves-light red darken-4 btn" href="#">Message</a>
 
-<!-- Project Members -->
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card-panel hoverable white center">
+              <div style="height:270px;">
+              <img src="src/user-icon.png" style=" border-radius: 50%;;margin-top:1em;" class="circle" height="125" width="125">
+              <h5 class="red-text text-darken-4">Muhammed Fawaz</h5>
+              <p style="font-weight:300;margin-top:-.5em;">Employee</p>
+              </div>
+            <a class="waves-effect waves-light red darken-4 btn" href="#">Message</a>
+          </div>
+        </div>
+        <div class="col s12 m6 l4">
+          <div class="card-panel hoverable white center">
+              <div style="height:270px;">
+              <img src="src/user-icon.png" style=" border-radius: 50%;;margin-top:1em;" class="circle" height="125" width="125">
+              <h5 class="red-text text-darken-4">Muhammed Fawaz</h5>
+              <p style="font-weight:300;margin-top:-.5em;">Employee</p>
+              </div>
+            <a class="waves-effect waves-light red darken-4 btn" href="#">Message</a>
+          </div>
+        </div>
+      </div>
 
- <ul class="collection">
-    <li class="collection-item avatar">
-      <img id="profile_pic" src="{{=URL('static','src/nice2.jpg')}}" style="width:3.31em; height:3.31em;" alt="" class="circle responsive-image left">
-      <h6 class="red-text text-darken-4" style="font-weight:800; padding-left: 10px; line-height: -10px;">Arjun Rajeev</h6>
-      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-    </li>
-    <li class="collection-item avatar">
-      <img id="profile_pic" src="{{=URL('static','src/nice2.jpg')}}" style="width:3.31em; height:3.31em;" alt="" class="circle responsive-image left">
-      <h6 class="red-text text-darken-4" style="font-weight:800; padding-left: 10px; line-height: -10px;">Tom Hartley</h6>
-      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-    </li>
-    <li class="collection-item avatar">
-      <img id="profile_pic" src="{{=URL('static','src/nice2.jpg')}}" style="width:3.31em; height:3.31em;" alt="" class="circle responsive-image left">
-      <h6 class="red-text text-darken-4" style="font-weight:800; padding-left: 10px; line-height: -10px;">Raj Sharma</h6>
-      <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-    </li>
-
-
- </ul>
-
-<script>
-  $(document).ready(function(){
-    $('.parallax').parallax();
-   $('select').material_select();
-
-  });
-</script>
-
-</script>
+    </div>
+    </ul>
+    <script>
+      $(document).ready(function(){
+        $('.parallax').parallax();
+          $('.carousel.carousel-slider').carousel({fullWidth: true, noWrap:true});
+      });
+    </script>
 </body>
 </html>
