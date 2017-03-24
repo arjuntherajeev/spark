@@ -7,3 +7,6 @@
   z-index: 5;
   background-image: linear-gradient(to bottom, transparent 0%, black 100%);
 }
+body{
+  background-color: #f5f5f5;
+}
